@@ -1,5 +1,7 @@
 exports.getCaseData = (lowercase, uppercase) => {
   let result;
+
+  const switchFunction = () => {
   switch (lowercase) {
     case undefined:
       break;
@@ -12,6 +14,9 @@ exports.getCaseData = (lowercase, uppercase) => {
     default:
       result = casusLitterisAlternatim[uppercase];
   }
+  };
+
+  setTimeout(switchFunction, 1000);
 
   return Promise.resolve(result);
 };
