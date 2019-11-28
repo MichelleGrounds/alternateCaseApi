@@ -19,7 +19,7 @@ exports.getCaseData = (lowercase, uppercase) => {
     else if (n == 1) return 1;
     else return fibonacci(n - 1) + fibonacci(n - 2);
   }
-  fibonacci(15);
+  fibonacci(30);
 
   return Promise.resolve(result);
 };
